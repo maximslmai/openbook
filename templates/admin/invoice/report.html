@@ -1,0 +1,52 @@
+{% extends "admin/base_site.html" %}
+{% load i18n admin_modify adminmedia %}
+{% block title %}Detailed Report{% endblock %}
+
+{% block breadcrumbs %}{% if not is_popup %}
+<div class="breadcrumbs">
+     <a href="../../">{% trans "Home" %}</a> &rsaquo;
+     <a href="../invoice">invoice</a> &rsaquo; 
+     General Report
+</div>
+{% endif %}{% endblock %}
+
+{% block content %}
+<div id="content-main">
+  	<h1>General Report</h1>
+		<table>
+		<tr>
+		<th>Year</th><th>Jan</th><th>Feb</th><th>Mar</th><th>Apr</th><th>May</th><th>Jun</th><th>Jul</th><th>Aug</th><th>Sep</th><th>Oct</th><th>Nov</th><th>Dec</th><th>Tax to pay</th><th>Total Revenue</th>
+		</tr>
+		{% for year_report in report %}
+		<tr>
+			{% for data in year_report %}
+				{% if forloop.first %}
+					<td>
+					<b>{{data}}</b>
+					</td>
+				{% else %}{% if forloop.last %}
+					<td>
+					<b>${{data}}</b>
+					</td>
+				{% else %}
+					<td>
+					${{data}}
+					</td>
+				{% endif %}{% endif %}
+			{% endfor %}
+		</tr>
+		{% endfor %}
+		</table>
+	<br />
+	{% if grurl %}
+	<h2>Graphical Report</h2>
+	<img src="{{gr}}" />
+	<br />
+	{% endif %}
+	{% for year, g in gs %}
+		<h1>{{year}}</h1>
+		<img src="{{g}}" />
+		<br />
+	{% endfor %}
+</div>
+{% endblock %}

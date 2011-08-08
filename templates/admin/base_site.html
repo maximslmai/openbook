@@ -1,0 +1,17 @@
+{% extends "admin/base.html" %}
+{% load i18n %}
+
+{% block title %}{{ title }} | {% trans 'Openbook Administration' %}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name">{% trans 'OpenBook administration' %}</h1>
+<hr/>
+<p align="right">Openbook is released to <br />PakShing Furniture, 4779 Steeles Ave.E., <br />Scarborough <br />Tel: (416)321-1882
+</p>
+<p>
+<hr />
+<p align="center"><a href="/">Home</a> | <a href="/invoice/invoice/">Invoice</a> | <a href="/invoice/report/">Report</a></p>
+</p>
+{% endblock %}
+{% block nav-global %}{% endblock %}
+
