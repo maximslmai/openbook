@@ -1,6 +1,6 @@
 import sys
 
-sys.path.append("/home/maxim/django_projects/mysite/")
+sys.path.append("/home/maximmai/webroot/openbook/")
 
 from invoice.models import Invoice, Item
 from django.contrib import admin

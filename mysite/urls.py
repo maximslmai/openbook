@@ -15,7 +15,7 @@ urlpatterns = patterns('',
     (r'^openbook/admin/', include(admin.site.urls)),
     (r'^openbook/invoice/report/$', 'mysite.invoice.admin_views.report'),
     (r'^openbook/about/$', direct_to_template, {'template':'about.html'}),
-    (r'^openbook', include(admin.site.urls)),
+    (r'', include(admin.site.urls)),
 )
 
 urlpatterns += patterns('',

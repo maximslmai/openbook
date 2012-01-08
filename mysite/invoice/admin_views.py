@@ -20,7 +20,7 @@ def get_total(year, month):
 def report(request):
     # data report
     if Invoice.objects.all().count() == 0:
-        return redirect("/")
+        return redirect("/openbook")
     min_year = Invoice.objects.order_by("date")[0].date.year
     max_year = Invoice.objects.order_by("-date")[0].date.year
     report = []
