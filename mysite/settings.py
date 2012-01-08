@@ -29,7 +29,7 @@ TIME_ZONE = 'America/Chicago'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'zh-CN'
+LANGUAGE_CODE = 'en-US'
 
 SITE_ID = 1
 
@@ -83,6 +83,7 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'mysite.invoice',
     'django.contrib.admin',
+    'django.contrib.staticfiles',
 )
 
 LANGUAGE_FILES = {
