@@ -96,3 +96,5 @@ LANGUAGE_FILES = {
                   }
 
 LANG = LANGUAGE_FILES['US_en']
+
+LOGOUT_URL = "/openbook/admin/logout/"
