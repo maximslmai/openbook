@@ -19,5 +19,5 @@ urlpatterns = patterns('',
 )
 
 urlpatterns += patterns('',
-(r'^static/media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': '/home/maximmai/webroot/openbook/media/'}),
+(r'^openbook/media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': '/home/maximmai/webroot/openbook/media/'}),
 )

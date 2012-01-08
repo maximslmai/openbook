@@ -39,12 +39,12 @@ USE_I18N = True
 
 # Absolute path to the directory that holds media.
 # Example: "/home/media/media.lawrence.com/"
-MEDIA_ROOT = ''
+MEDIA_ROOT = '/home/maximmai/webroot/openbook/media/'
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash if there is a path component (optional in other cases).
 # Examples: "http://media.lawrence.com", "http://example.com/media/"
-MEDIA_URL = '/static/media/'
+MEDIA_URL = '/media/'
 # URL prefix for admin media -- CSS, JavaScript and images. Make sure to use a
 # trailing slash.
 # Examples: "http://foo.com/media/", "/media/".
@@ -76,9 +76,9 @@ TEMPLATE_DIRS = (
 	"/home/maximmai/webroot/openbook/templates"
 )
 
-STATIC_ROOT = "/home/maximmai/webroot/openbook/media/"
+#STATIC_ROOT = "/home/maximmai/webroot/openbook/media/"
 
-STATIC_URL = "/media/"
+#STATIC_URL = "/media/"
 
 INSTALLED_APPS = (
     'django.contrib.auth',
@@ -87,7 +87,6 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'mysite.invoice',
     'django.contrib.admin',
-    'django.contrib.staticfiles',
 )
 
 LANGUAGE_FILES = {
