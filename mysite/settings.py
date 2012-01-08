@@ -48,7 +48,7 @@ MEDIA_URL = '/media/'
 # URL prefix for admin media -- CSS, JavaScript and images. Make sure to use a
 # trailing slash.
 # Examples: "http://foo.com/media/", "/media/".
-ADMIN_MEDIA_PREFIX = '/media/'
+ADMIN_MEDIA_PREFIX = '/openbook/media/'
 
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = '=fb!p)rpjw71mh2jcsxe6pu)j8z@3nb#d4uqyq-d_lozg2##o9'
