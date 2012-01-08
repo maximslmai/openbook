@@ -76,6 +76,10 @@ TEMPLATE_DIRS = (
 	"/home/maximmai/webroot/openbook/templates"
 )
 
+STATIC_ROOT = "/home/maximmai/webroot/openbook/media/"
+
+STATIC_URL = "media/"
+
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
