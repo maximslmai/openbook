@@ -12,12 +12,12 @@ urlpatterns = patterns('',
     # (r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     # Uncomment the next line to enable the admin:
-    (r'^admin/', include(admin.site.urls)),
-    (r'^invoice/report/$', 'mysite.invoice.admin_views.report'),
-    (r'^about/$', direct_to_template, {'template':'about.html'}),
-    (r'^', include(admin.site.urls)),
+    (r'^openbook/admin/', include(admin.site.urls)),
+    (r'^openbook/invoice/report/$', 'mysite.invoice.admin_views.report'),
+    (r'^openbook/about/$', direct_to_template, {'template':'about.html'}),
+    (r'^openbook', include(admin.site.urls)),
 )
 
 urlpatterns += patterns('',
-(r'^static/media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': '/home/maxim/django_projects/media/'}),
+(r'^static/media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': '/home/maximmai/webroot/openbook/media/'}),
 )
